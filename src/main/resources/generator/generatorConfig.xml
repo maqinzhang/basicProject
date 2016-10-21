@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generatorConfiguration>
+	<!-- tips： 1、执行mvn code-generator:generate命令，生成代码 2、生成的文件位置可自行调整 -->
+	<author>
+		<name>MaQinZh</name>
+		<phone>15651781151</phone>
+		<email>maqinzhang@qq.com</email>
+	</author>
+
+	<jdbcConnection>
+		<driverClass>oracle.jdbc.OracleDriver</driverClass>
+		<connectionURL>jdbc:oracle:thin:@127.0.0.1:1521:xe</connectionURL>
+		<username>app</username>
+		<password>app</password>
+	</jdbcConnection>
+
+	<!-- 生成的java 相对所在位置 -->
+	<javaProjectGenerator>
+		<targetPackage>com.kyyc</targetPackage>
+		<targetProject>D:\git\basicProject\src\main\java</targetProject>
+		<targetWebView>D:\git\basicProject\src\main\webapp\WEB-INF\views\jsp</targetWebView>
+	</javaProjectGenerator>
+
+	<table>
+		<tableName>APP_LOGIN_RECORD</tableName>
+		<tablePk>ID</tablePk>
+		<tableDesc>APP登录记录</tableDesc>
+		<module>login</module>
+	</table>
+
+</generatorConfiguration>
